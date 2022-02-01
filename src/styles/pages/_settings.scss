@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url();
+}
+
+$font-1: sans-serif;
+$white: #fff;
+
+body {
+  background: $white;
+  font-family: $font-1;
+}
+li {
+  list-style-type: none;
+}
