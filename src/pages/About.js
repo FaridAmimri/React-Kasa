@@ -1,6 +1,6 @@
 /** @format */
 
-import Header from '../components/Header'
+import Header from '../components/header/Header'
 
 function About() {
   return <Header />

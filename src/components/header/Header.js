@@ -1,7 +1,8 @@
 /** @format */
 
-import Logo from '../components/Logo'
-import Navigation from '../components/Navigation'
+import Logo from '../logo/Logo'
+import Navigation from '../navigation/Navigation'
+import "./header.scss"
 
 function Header() {
     return (
