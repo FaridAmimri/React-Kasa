@@ -1,0 +1,15 @@
+$color-1: #ff6060;
+$color-2: #ffffff;
+$color-3: #f7f7f7;
+
+.housing {
+  background: $color-3;
+  border-radius: 2vw;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: 3vw;
+  }
+}
