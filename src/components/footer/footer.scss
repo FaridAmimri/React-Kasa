@@ -1,0 +1,25 @@
+$color-1: #ff6060;
+$color-2: #ffffff;
+$color-3: #000000;
+$color-4: #f7f7f7;
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 120px;
+  background: $color-3;
+  margin-top: 3vw;
+  padding-top: 4vw;
+  img {
+    width: 95px;
+    height: 30px;
+    margin-bottom: 1vw;
+  }
+  p {
+    color: $color-2;
+    font-size: 18px;
+    font-weight: 900;
+  }
+}

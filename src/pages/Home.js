@@ -1,8 +1,9 @@
 /** @format */
 
-import Avatar from '../components/avatar/Avatar'
 import Header from '../components/header/Header'
+import Avatar from '../components/avatar/Avatar'
 import Housing from '../components/housing/Housing'
+import Footer from '../components/footer/Footer'
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Header />
       <Avatar />
       <Housing />
+      <Footer />
     </>
   )
 }

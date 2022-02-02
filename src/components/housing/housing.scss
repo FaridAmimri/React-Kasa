@@ -1,9 +1,10 @@
 $color-1: #ff6060;
 $color-2: #ffffff;
-$color-3: #f7f7f7;
+$color-3: #000000;
+$color-4: #f7f7f7;
 
 .housing {
-  background: $color-3;
+  background: $color-4;
   border-radius: 2vw;
   ul {
     display: flex;
