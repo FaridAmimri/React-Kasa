@@ -3,14 +3,14 @@ $color-2: #ffffff;
 $color-3: #000000;
 $color-4: #f7f7f7;
 
-.avatar {
+.banner {
   display: flex;
   justify-content: center;
   width: auto;
   height: 140px;
   border-radius: 2vw;
   margin: 3vw 0;
-  background: url(../../assets/avatar.png) center/cover;
+  background: url(../../assets/banner.png) center/cover;
   span {
     align-self: center;
     color: $color-2;

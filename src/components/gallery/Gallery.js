@@ -1,18 +1,18 @@
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Card from '../card/Card'
-import "./housing.scss"
+import './Gallery.scss'
 
-function Housing() {
+function Gallery() {
   const [data, setData] = useState([])
 
   useEffect(() => {
     fetch('./apartments.json')
-    .then((res) => res.json())
-    .then((res) => setData(res))
-  },[])
-  console.log(data)
+      .then((res) => res.json())
+      .then((res) => setData(res))
+  }, [])
+
   return (
-    <div className="housing">
+    <div className="gallery">
       <ul>
         {data.map((house) => (
           <Card key={house.id} house={house} />
@@ -22,4 +22,4 @@ function Housing() {
   )
 }
 
-export default Housing
+export default Gallery
