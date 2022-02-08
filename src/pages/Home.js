@@ -5,12 +5,12 @@ import Banner from '../components/banner/Banner'
 import Gallery from '../components/gallery/Gallery'
 import Footer from '../components/footer/Footer'
 
-function Home() {
+function Home(props) {
   return (
     <>
       <Header />
       <Banner />
-      <Gallery />
+      <Gallery data={props.data} />
       <Footer />
     </>
   )

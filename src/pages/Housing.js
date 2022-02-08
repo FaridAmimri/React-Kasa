@@ -3,11 +3,11 @@
 import Header from '../components/header/Header'
 import Carousel from '../components/carousel/Carousel'
 
-function Housing() {
+function Housing(props) {
   return (
     <>
       <Header />
-      <Carousel />
+      <Carousel imgList={props.data[0].pictures} />
     </>
   )
 }

@@ -1,20 +1,11 @@
-import { useState, useEffect } from 'react'
 import Card from '../card/Card'
 import './Gallery.scss'
 
-function Gallery() {
-  const [data, setData] = useState([])
-
-  useEffect(() => {
-    fetch('./apartments.json')
-      .then((res) => res.json())
-      .then((res) => setData(res))
-  }, [])
-
+function Gallery(props) {
   return (
     <div className="gallery">
       <ul>
-        {data.map((house) => (
+        {props.data.map((house) => (
           <Card key={house.id} house={house} />
         ))}
       </ul>
