@@ -3,20 +3,31 @@
 import { useParams } from 'react-router-dom'
 import Carousel from '../components/carousel/Carousel'
 import Locality from '../components/locality/Locality'
-
+import Host from '../components/host/Host'
+import StarRating from '../components/starRating/StarRating'
 
 function Housing(props) {
   const { id } = useParams()
 
   return (
-    <div className='body'>
-      {props.data.filter(house => house.id === id).map((house, index) => (
-        <div className='main'>
-          <Carousel key={index} imgList={house.pictures} />
-          <Locality key={house.id} house={house}/>
-        </div>
-      ))}
-    </div>
+    <>
+      {props.data
+        .filter((house) => house.id === id)
+        .map((house, index) => (
+          <main>
+            <Carousel key={index} imgList={house.pictures} />
+            <section>
+              <article>
+                <Locality key={house.title} house={house} />
+              </article>
+              <aside>
+                <Host key={house.id} host={house.host} />
+                <StarRating key={house.name} rate={house.rating} />
+              </aside>
+            </section>
+          </main>
+        ))}
+    </>
   )
 }
 

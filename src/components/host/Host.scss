@@ -1,0 +1,19 @@
+$color-1: #ff6060;
+$color-2: #ffffff;
+$color-3: #000000;
+$color-4: #f7f7f7;
+
+.host {
+    display: flex;
+    align-items: center;
+    h5 {
+        color: $color-1;
+        font-size: 18px;
+        padding-right: 5px;
+    }
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+}
