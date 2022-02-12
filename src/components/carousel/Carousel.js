@@ -18,14 +18,14 @@ function Carousel({ imgList }) {
     <div className="carousel">
       <FaChevronLeft className="left-arrow" onClick={prevSlide} />
       <FaChevronRight className="right-arrow" onClick={nextSlide} />
-      {imgList.map((location, index) => {
+      {imgList.map((slide, index) => {
         return (
           <div
             className={index === currImg ? 'slide-active' : 'slide'}
             key={index}
           >
             {index === currImg && (
-              <img key={index} src={location} alt="housing" />
+              <img key={index} src={slide} alt="housing" />
             )}
             <span>{currImg+1}/{imgListLength}</span>
           </div>
