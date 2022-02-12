@@ -5,6 +5,7 @@ import Header from './components/header/Header'
 import Home from './pages/Home'
 import About from './pages/About'
 import Housing from './pages/Housing'
+import Error from './pages/Error'
 import Footer from './components/footer/Footer'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home data={data} />} />
           <Route path="/about" element={<About />} />
           <Route path="/housing/:id" element={<Housing data={data} />} />
+          <Route path="/*" element={<Error />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

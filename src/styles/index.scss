@@ -1,7 +1,32 @@
+$color-1: #ff6060;
+$color-2: #ffffff;
+$color-3: #000000;
+$color-4: #f7f7f7;
+
 body {
-    max-width: 1024px;
-    margin: auto;
-    padding: 5vw;
-    font-family: 'Montserrat';
+  max-width: 1024px;
+  margin: auto;
+  padding: 5vw;
+  font-family: 'Montserrat';
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 7vw;
+  color: $color-1;
+  font-weight: bold;
+  span {
+    font-size: 200px;
   }
-  
+  p {
+    font-size: 25px;
+  }
+  a {
+    font-size: 18px;
+    margin-top: 10vw;
+    color: $color-1;
+  }
+}
