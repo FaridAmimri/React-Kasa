@@ -4,8 +4,8 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import './Carousel.scss'
 
 function Carousel({ imgList }) {
-  const [currImg, setCurrImg] = useState(0)
   const imgListLength = imgList.length
+  const [currImg, setCurrImg] = useState(0)
 
   const nextSlide = () => {
     setCurrImg(currImg === imgListLength - 1 ? 0 : currImg + 1)
@@ -25,8 +25,9 @@ function Carousel({ imgList }) {
             key={index}
           >
             {index === currImg && (
-              <img key={index} src={location} alt="location" />
+              <img key={index} src={location} alt="housing" />
             )}
+            <span>{currImg+1}/{imgListLength}</span>
           </div>
         )
       })}

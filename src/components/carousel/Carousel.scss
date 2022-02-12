@@ -37,4 +37,13 @@ $color-4: #f7f7f7;
     opacity: 1;
     transition-duration: 1s;
   }
+  span {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    color: $color-2;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 10;
+  }
 }
