@@ -10,6 +10,11 @@ body {
   font-family: 'Montserrat';
 }
 
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
 .dropdowns {
   height: auto;
 }

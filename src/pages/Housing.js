@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import Carousel from '../components/carousel/Carousel'
 import Locality from '../components/locality/Locality'
 import Host from '../components/host/Host'
-import StarRating from '../components/starRating/StarRating'
+import Stars from '../components/stars/Stars'
 
 function Housing(props) {
   const { id } = useParams()
@@ -22,7 +22,7 @@ function Housing(props) {
               </article>
               <aside>
                 <Host key={house.id} host={house.host} />
-                <StarRating key={house.name} rate={house.rating} />
+                <Stars key={house.name} rate={house.rating} />
               </aside>
             </section>
           </main>

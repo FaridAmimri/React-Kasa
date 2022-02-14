@@ -1,0 +1,21 @@
+$color-1: #ff6060;
+$color-2: #ffffff;
+$color-3: #E3E3E3;
+$color-4: #f7f7f7;
+
+.star-rating {
+    display: flex;
+    justify-content: flex-end;
+    color: $color-3;
+  svg {
+    width: 30px;
+    height: 30px;
+    padding-right: 2px;
+  }
+  .active-color {
+    color: $color-1;
+  }
+  .inactive-color {
+    color: $color-4;
+  }
+}
