@@ -7,15 +7,15 @@ $color-4: #f7f7f7;
     display: flex;
     justify-content: flex-end;
     color: $color-3;
+    margin-top: 1vw;
   svg {
-    width: 30px;
-    height: 30px;
+    font-size: x-large;
     padding-right: 2px;
   }
   .active-color {
     color: $color-1;
   }
   .inactive-color {
-    color: $color-4;
+    color: $color-3;
   }
 }

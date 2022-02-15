@@ -7,12 +7,14 @@ function Stars({ rate }) {
   return (
     <div className="star-rating">
       {stars.map((star, index) => {
-     
         return (
           <>
-            {index < rate && (
-            <MdStarRate key={index} className={index < rate ? 'active-color' : 'inactive-color'} />
-            )}
+            {
+              <MdStarRate
+                key={index}
+                className={index < rate ? 'active-color' : 'inactive-color'}
+              />
+            }
           </>
         )
       })}
