@@ -10,11 +10,14 @@ import Footer from './components/footer/Footer'
 
 function App() {
   const [data, setData] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    fetch('./apartments.json')
+    fetch('/apartments.json')
       .then((res) => res.json())
-      .then((res) => setData(res))
+      .then((res) => {setData(res)
+      setIsLoading(false)
+      })
   }, [])
 
   return (

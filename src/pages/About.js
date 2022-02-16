@@ -28,7 +28,9 @@ function About() {
       <Avatar />
       <div className='dropdowns'>
       {contents.map((article, index) => (
-        <Dropdown key={index} title={article.title} content={article.content} />
+        <Dropdown key={index} title={article.title}>
+          {<p>{article.content}</p>}
+        </Dropdown>
       ))}
       </div>
     </>

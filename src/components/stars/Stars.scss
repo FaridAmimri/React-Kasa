@@ -1,12 +1,8 @@
-$color-1: #ff6060;
-$color-2: #ffffff;
-$color-3: #E3E3E3;
-$color-4: #f7f7f7;
+@import "/src/styles/settings.scss";
 
 .star-rating {
     display: flex;
     justify-content: flex-end;
-    color: $color-3;
     margin-top: 1vw;
   svg {
     font-size: x-large;
@@ -16,6 +12,6 @@ $color-4: #f7f7f7;
     color: $color-1;
   }
   .inactive-color {
-    color: $color-3;
+    color: $color-5;
   }
 }

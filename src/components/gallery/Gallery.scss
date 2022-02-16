@@ -1,7 +1,4 @@
-$color-1: #ff6060;
-$color-2: #ffffff;
-$color-3: #000000;
-$color-4: #f7f7f7;
+@import "/src/styles/settings.scss";
 
 .gallery {
   background: $color-4;

@@ -1,7 +1,4 @@
-$color-1: #ff6060;
-$color-2: #ffffff;
-$color-3: #000000;
-$color-4: #f7f7f7;
+@import "/src/styles/settings.scss";
 
 body {
   max-width: 1024px;
@@ -10,15 +7,33 @@ body {
   font-family: 'Montserrat';
 }
 
+/* Housing Page */
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+
 section {
   display: flex;
   justify-content: space-between;
+  margin-top: 2vw;
 }
 
+aside {
+  width: 47%;
+}
+
+/* About Page */
 .dropdowns {
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
+/* Error Page */
 .error {
   display: flex;
   flex-direction: column;
