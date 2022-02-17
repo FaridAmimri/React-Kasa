@@ -1,4 +1,4 @@
-@import "/src/styles/settings.scss";
+@import '/src/styles/settings.scss';
 
 body {
   max-width: 1024px;
@@ -7,7 +7,7 @@ body {
   font-family: 'Montserrat';
 }
 
-/* Housing Page */
+/****** Housing Page ******/
 main {
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@ aside {
   width: 47%;
 }
 
-/* About Page */
+/****** About Page ******/
 .dropdowns {
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@ aside {
   margin: auto;
 }
 
-/* Error Page */
+/****** Error Page ******/
 .error {
   display: flex;
   flex-direction: column;
@@ -52,5 +52,70 @@ aside {
     font-size: 18px;
     margin-top: 10vw;
     color: $color-1;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  /****** Housing Page ******/
+  main {
+    flex-direction: column;
+    article:nth-child(2) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  section {
+    flex-direction: column;
+    margin-top: 3vw;
+    aside {
+      width: 100%;
+    }
+  }
+  /****** About Page ******/
+  .dropdowns {
+    width: 100%;
+  }
+  /****** Error Page ******/
+  .error {
+    span {
+      font-size: 100px;
+    }
+    p {
+      font-size: 20px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  /****** Housing Page ******/
+  main {
+    flex-direction: column;
+  }
+  article:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /****** About Page ******/
+  .dropdowns {
+    width: 100%;
+  }
+  /****** Error Page ******/
+  .error {
+    span {
+      font-size: 120px;
+    }
+    p {
+      font-size: 22px;
+    }
+    a {
+      font-size: 17px;
+    }
   }
 }

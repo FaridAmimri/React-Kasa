@@ -18,3 +18,27 @@
     border-radius: 50%;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .host {
+    h5 {
+      font-size: 13px;
+    }
+    img {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .host {
+    h5 {
+      font-size: 14px;
+    }
+    img {
+      width: 56px;
+      height: 56px;
+    }
+  }
+}

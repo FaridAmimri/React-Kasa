@@ -35,7 +35,7 @@
     font-weight: bold;
     padding: 2vw 1vw 1vw 1vw;
     overflow: auto;
-    animation: dropdown 1s;
+    animation: dropdown 2s;
     p {
       margin: 0;
     }
@@ -55,5 +55,44 @@
   100% {
     opacity: 1;
     transform: translateY(3px);
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .dropdown {
+    .dropdown-box {
+      height: 4vh;
+      font-size: 14px;
+      width: 95%;
+      svg {
+        font-size: small;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .dropdown-content {
+      font-size: 13px;
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .dropdown {
+    .dropdown-box {
+      height: 4vh;
+      width: 95%;
+      svg {
+        font-size: medium;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .dropdown-content {
+      font-size: 13px;
+      width: 95%;
+    }
   }
 }

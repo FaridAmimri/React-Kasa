@@ -11,3 +11,14 @@
     padding: 3vw;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .gallery {
+    background: $color-2;
+    ul {
+      flex-direction: column;
+      gap: 4vw;
+      padding: 0;
+    }
+  }
+}

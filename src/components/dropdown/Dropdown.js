@@ -5,7 +5,7 @@ import './Dropdown.scss'
 function Dropdown({ title, children}) {
   const [isOpen, setIsOpen] = useState(false)
   const rotate = isOpen ? 'rotate(180deg)' : 'rotate(0)'
-  const rotation = { transform: rotate, transition: '0.4s ease-in-out' }
+  const rotation = { transform: rotate, transition: '0.6s ease-in-out' }
 
   return (
     <div className="dropdown">

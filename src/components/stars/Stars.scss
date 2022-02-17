@@ -15,3 +15,21 @@
     color: $color-5;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .star-rating {
+    svg {
+      font-size: large;
+      padding-right: 1px;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .star-rating {
+    svg {
+      font-size: large;
+      padding-right: 1px;
+    }
+  }
+}

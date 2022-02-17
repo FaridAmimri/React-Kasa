@@ -20,3 +20,23 @@
     color: $color-2;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .card {
+    width: 100%;
+    height: 255px;
+    h4 {
+      top: 75%;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px)  {
+  .card {
+    width: 100%;
+    height: 255px;
+    h4 {
+      top: 75%;
+    }
+  }
+}
