@@ -1,6 +1,6 @@
 /** @format */
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/header/Header'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -15,8 +15,9 @@ function App() {
   useEffect(() => {
     fetch('/apartments.json')
       .then((res) => res.json())
-      .then((res) => {setData(res)
-      setIsLoading(false)
+      .then((res) => {
+        setData(res)
+        setIsLoading(false)
       })
   }, [])
 
@@ -28,7 +29,8 @@ function App() {
           <Route path="/" element={<Home data={data} />} />
           <Route path="/about" element={<About />} />
           <Route path="/housing/:id" element={<Housing data={data} />} />
-          <Route path="/*" element={<Error />}/>
+          <Route path="/housing/*" element={<Navigate to='/' />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
         <Footer />
       </BrowserRouter>
