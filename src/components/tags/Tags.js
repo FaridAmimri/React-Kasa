@@ -1,11 +1,10 @@
 import './Tags.scss'
 
-
 function Tags({ tagList }) {
   return (
     <div className="tags">
-      {tagList.map((tag, idx) => {
-        return <div className="tag" key={idx}>{tag}</div>
+      {tagList.map((tag, index) => {
+        return <div key={index} className="tag">{tag}</div>
       })}
     </div>
   )

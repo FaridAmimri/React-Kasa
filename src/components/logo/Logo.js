@@ -1,5 +1,4 @@
 import './Logo.scss'
-// import logo from "./logoheader.png"
 
 function Logo() {
   return (
