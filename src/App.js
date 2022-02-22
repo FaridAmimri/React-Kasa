@@ -25,13 +25,14 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Routes>
+        {isLoading && <div>Loading...</div>}
+        {!isLoading && <Routes>
           <Route path="/" element={<Home data={data} />} />
           <Route path="/about" element={<About />} />
           <Route path="/housing/:id" element={<Housing data={data} />} />
           <Route path="/housing/*" element={<Navigate to='/' />} />
           <Route path="/*" element={<Error />} />
-        </Routes>
+        </Routes>}
         <Footer />
       </BrowserRouter>
     </>
