@@ -25,6 +25,9 @@
   .card {
     width: 100%;
     height: 255px;
+    img {
+      background: linear-gradient(180deg, $color-3, $color-2);
+    }
     h4 {
       top: 75%;
     }
@@ -35,6 +38,9 @@
   .card {
     width: 100%;
     height: 255px;
+    img {
+      background: linear-gradient(180deg, $color-3, $color-2);
+    }
     h4 {
       top: 75%;
     }

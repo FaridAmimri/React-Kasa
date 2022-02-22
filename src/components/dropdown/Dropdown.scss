@@ -6,16 +6,17 @@
   align-items: center;
   position: relative;
   width: 100%;
-  margin-bottom: 3vw;
+  margin-bottom: 25px;
+  font-size: 24px;
   .dropdown-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: $color-1;
-    width: 95%;
-    height: 3vh;
-    padding: 1vw;
-    border-radius: 0.5vw;
+    width: 97%;
+    height: 35px;
+    padding: 1vw 2vw;
+    border-radius: 7px;
     color: $color-2;
     font-weight: bold;
     z-index: 1;
@@ -27,13 +28,13 @@
   .dropdown-content {
     position: static;
     top: 80%;
-    width: 95%;
+    width: 97%;
     height: auto;
     background: $color-4;
     color: $color-1;
-    border-radius: 0.5vw;
+    border-radius: 5px;
     font-weight: bold;
-    padding: 2vw 1vw 1vw 1vw;
+    padding: 3vw 2vw 1vw 2vw;
     overflow: auto;
     animation: dropdown 2s;
     p {
@@ -61,37 +62,34 @@
 @media screen and (max-width: 426px) {
   .dropdown {
     .dropdown-box {
-      height: 4vh;
-      font-size: 14px;
+      height: 28px;
       width: 95%;
+      border-radius: 5px;
+      font-size: 13px;
+      padding: 1vw 2vw;
       svg {
         font-size: small;
       }
-      span {
-        font-size: 14px;
-      }
     }
     .dropdown-content {
-      font-size: 13px;
       width: 95%;
+      font-size: 12px;
+      padding: 3vw 2vw 1vw 2vw;
     }
   }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .dropdown {
+    font-size: 18px;
     .dropdown-box {
-      height: 4vh;
+      height: 30px;
       width: 95%;
       svg {
         font-size: medium;
       }
-      span {
-        font-size: 14px;
-      }
     }
     .dropdown-content {
-      font-size: 13px;
       width: 95%;
     }
   }
