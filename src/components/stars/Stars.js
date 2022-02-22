@@ -8,14 +8,14 @@ function Stars({ rate }) {
     <div className="star-rating">
       {stars.map((star, index) => {
         return (
-          <>
+          <div key={index}>
             {
               <MdStarRate
                 key={index}
                 className={index < rate ? 'active-color' : 'inactive-color'}
               />
             }
-          </>
+          </div>
         )
       })}
     </div>

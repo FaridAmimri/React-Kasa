@@ -6,7 +6,6 @@ import './Carousel.scss'
 function Carousel({ imgList }) {
   const imgListLength = imgList.length
   const [currImg, setCurrImg] = useState(0)
-  console.log(currImg)
 
   const nextSlide = () => {
     setCurrImg(currImg === imgListLength - 1 ? 0 : currImg + 1)
