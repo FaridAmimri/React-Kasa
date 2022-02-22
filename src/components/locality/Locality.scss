@@ -4,11 +4,11 @@
   color: $color-1;
   h2 {
     margin: 1vw 0 0 0;
-    font-size: 25px;
+    font-size: 36px;
   }
   h5 {
     margin: 0.5vw 0 2vw 0;
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 
@@ -19,7 +19,7 @@
     }
     h5 {
       margin: 2.5vw 0 3vw 0;
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
@@ -27,11 +27,11 @@
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .locality {
     h2 {
-      font-size: 20px;
+      font-size: 24px;
     }
     h5 {
       margin: 2.5vw 0 3vw 0;
-      font-size: 12px;
+      font-size: 16px;
     }
   }
 }
