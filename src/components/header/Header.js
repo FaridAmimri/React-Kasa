@@ -2,7 +2,7 @@
 
 import Logo from '../logo/Logo'
 import Navigation from '../navigation/Navigation'
-import "./Header.scss"
+import "./header.scss"
 
 function Header() {
     return (
