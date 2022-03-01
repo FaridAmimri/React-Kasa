@@ -1,4 +1,4 @@
-import './Tags.scss'
+import './tags.scss'
 
 function Tags({ tagList }) {
   return (

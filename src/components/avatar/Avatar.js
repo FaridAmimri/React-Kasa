@@ -1,4 +1,4 @@
-import './Avatar.scss'
+import './avatar.scss'
 
 function Avatar() {
   return <div className="avatar"></div>

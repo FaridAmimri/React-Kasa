@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaChevronDown } from 'react-icons/fa'
-import './Dropdown.scss'
+import './dropdown.scss'
 
 function Dropdown({ title, children}) {
   const [isOpen, setIsOpen] = useState(false)

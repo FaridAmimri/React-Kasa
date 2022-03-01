@@ -1,4 +1,4 @@
-import './Locality.scss'
+import './locality.scss'
 
 function Locality({ house }) {
   return (
