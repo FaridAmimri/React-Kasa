@@ -31,7 +31,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/housing/:id" element={<Housing data={data} />} />
           <Route path="/housing/*" element={<Navigate to='/' />} />
-          <Route path="/*" element={<Error />} />
+          <Route path="/notfound" element={<Error />} />
         </Routes>}
         <Footer />
       </BrowserRouter>

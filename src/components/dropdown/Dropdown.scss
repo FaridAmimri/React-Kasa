@@ -7,28 +7,28 @@
   position: relative;
   width: 100%;
   margin-bottom: 25px;
-  font-size: 24px;
   .dropdown-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: $color-1;
-    width: 90%;
+    width: 93%;
     height: 35px;
-    padding: 1vw 2vw;
+    font-size: 18px;
+    padding: 1vw 1vw 1vw 2vw;
     border-radius: 7px;
     color: $color-2;
     font-weight: bold;
     z-index: 1;
     svg {
-      font-size: large;
-      padding-right: 0.5vw;
+      font-size: x-large;
     }
   }
   .dropdown-content {
     position: static;
     top: 80%;
-    width: 90%;
+    width: 91.5%;
+    font-size: 18px;
     height: auto;
     background: $color-4;
     color: $color-1;
@@ -81,16 +81,17 @@
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .dropdown {
-    font-size: 18px;
     .dropdown-box {
       height: 30px;
-      width: 95%;
+      width: 96.5%;
+      font-size: 16px;
       svg {
         font-size: medium;
       }
     }
     .dropdown-content {
-      width: 95%;
+      width: 95.5%;
+      font-size: 16px;
     }
   }
 }

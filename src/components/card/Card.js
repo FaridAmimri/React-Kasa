@@ -5,8 +5,10 @@ function Card({ house }) {
   return (
     <li className="card">
       <NavLink to={`housing/${house.id}`}>
-        <img src={house.cover} alt="location" />
-        <h4>{house.title}</h4>
+        <div className="overlay">
+          <img src={house.cover} alt="location" />
+          <h4>{house.title}</h4>
+        </div>
       </NavLink>
     </li>
   )
