@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import './Card.scss'
+import './card.scss'
 
 
 function Card({ house }) {
