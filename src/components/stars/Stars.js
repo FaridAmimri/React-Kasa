@@ -1,6 +1,7 @@
 import { MdStarRate } from 'react-icons/md'
 import './stars.scss'
 
+
 function Stars({ rate }) {
   const stars = Array.from({ length: 5 }, () => <MdStarRate />)
 

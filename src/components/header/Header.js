@@ -4,6 +4,7 @@ import Logo from '../logo/Logo'
 import Navigation from '../navigation/Navigation'
 import "./header.scss"
 
+
 function Header() {
     return (
       <header>

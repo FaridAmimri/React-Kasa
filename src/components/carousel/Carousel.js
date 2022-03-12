@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-
 import './carousel.scss'
+
 
 function Carousel({ imgList }) {
   const imgListLength = imgList.length

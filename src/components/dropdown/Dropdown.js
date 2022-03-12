@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FaChevronDown } from 'react-icons/fa'
 import './dropdown.scss'
 
+
 function Dropdown({ title, children}) {
   const [isOpen, setIsOpen] = useState(false)
   const rotate = isOpen ? 'rotate(180deg)' : 'rotate(0)'

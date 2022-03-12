@@ -1,5 +1,6 @@
 import './locality.scss'
 
+
 function Locality({ house }) {
   return (
     <div className="locality">

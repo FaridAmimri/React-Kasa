@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import './card.scss'
 
+
 function Card({ house }) {
   return (
     <li className="card">

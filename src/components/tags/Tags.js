@@ -1,5 +1,6 @@
 import './tags.scss'
 
+
 function Tags({ tagList }) {
   return (
     <div className="tags">

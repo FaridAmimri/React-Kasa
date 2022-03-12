@@ -2,6 +2,7 @@
 import { NavLink } from 'react-router-dom';
 import './navigation.scss'
 
+
 function Navigation() {
   return (
     <nav className='navigation'>
