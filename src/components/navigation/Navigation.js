@@ -1,6 +1,6 @@
 /** @format */
 import { NavLink } from 'react-router-dom';
-import './Navigation.scss'
+import './navigation.scss'
 
 
 function Navigation() {
