@@ -1,4 +1,4 @@
-import './avatar.scss'
+import './Avatar.scss'
 
 
 function Avatar() {

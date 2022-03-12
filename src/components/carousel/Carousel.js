@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import './carousel.scss'
+import './Carousel.scss'
 
 
 function Carousel({ imgList }) {

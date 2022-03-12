@@ -1,5 +1,5 @@
 import { MdStarRate } from 'react-icons/md'
-import './stars.scss'
+import './Stars.scss'
 
 
 function Stars({ rate }) {

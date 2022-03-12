@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaChevronDown } from 'react-icons/fa'
-import './dropdown.scss'
+import './Dropdown.scss'
 
 
 function Dropdown({ title, children}) {

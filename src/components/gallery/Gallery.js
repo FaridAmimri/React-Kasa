@@ -1,5 +1,5 @@
 import Card from '../card/Card'
-import './gallery.scss'
+import './Gallery.scss'
 
 
 function Gallery(props) {
